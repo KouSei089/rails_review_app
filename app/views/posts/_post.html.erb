@@ -1,0 +1,26 @@
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <%= image_tag 'sample', size: '150x200' %>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"><%= post.name %></h5>
+        <p class="card-text"><%= post.description %></p>
+        <p class="card-text"><small class="text-muted"><%= post.created_at %></small></p>
+        <ul class="list-inline justify-content-center" style="float: right;">
+          <li class="list-inline-item">
+            <%= link_to edit_post_path(post), id: "button-edit-#" do %>
+              <%= icon 'fa', 'pen' %>
+            <% end %>
+          </li>
+          <li class="list-inline-item">
+            <%= link_to post_path(post), id: "button-delete-#", method: :delete, data: {confirm: '掲示板を削除してよろしいですか？'} do %>
+              <%= icon 'fas', 'trash' %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
