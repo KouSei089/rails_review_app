@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   root to: 'top#index'
-  resources :posts
+
+  resources :posts do
+    resources :comments, only: %i[create], shallow: true
+  end
 
   resources :users, only: [:new, :create]
   get 'login' => 'user_sessions#new', :as => :login
