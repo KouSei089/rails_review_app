@@ -75,3 +75,5 @@ gem 'font-awesome-sass', '~> 5.12.0'
 gem 'jquery-rails'
 
 gem 'faker'
+
+gem 'carrierwave', '2.0.2'

@@ -1,0 +1,15 @@
+current directory: /Users/h.izumi/Desktop/rails_curriculum_review/rails_curriculum_review/vendor/bundle/ruby/2.6.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+/Users/h.izumi/.rbenv/versions/2.6.6/bin/ruby -I /Users/h.izumi/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210610-40025-3ztqz2.rb extconf.rb
+creating Makefile
+
+current directory: /Users/h.izumi/Desktop/rails_curriculum_review/rails_curriculum_review/vendor/bundle/ruby/2.6.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+make DESTDIR\= clean
+
+current directory: /Users/h.izumi/Desktop/rails_curriculum_review/rails_curriculum_review/vendor/bundle/ruby/2.6.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+make DESTDIR\=
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+current directory: /Users/h.izumi/Desktop/rails_curriculum_review/rails_curriculum_review/vendor/bundle/ruby/2.6.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20210610-40025-1xppj1h
