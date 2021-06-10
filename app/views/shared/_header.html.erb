@@ -31,7 +31,17 @@
       </form>
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         <% if current_user %>
-          <%= link_to 'Logout', :logout, method: :post, class: 'btn btn-success' %>
+          <%= link_to 'New Post', new_post_path, class: 'btn btn-success' %>
+          <!-- プロフィールドロップダウン -->
+          <div class="dropdown">
+            <%= image_tag 'sample', size: '40x40', class: 'rounded-circle mr15 dropdown-toggle',id: 'dropdownMenu2', "data-bs-toggle": :dropdown, "aria-expanded": :false %>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li><button class="dropdown-item" type="button">Another action</button></li>
+              <li><button class="dropdown-item" type="button">Something else here</button></li>
+              <li><%= link_to 'Logout', :logout, method: :post, class: 'dropdown-item' %></li>
+            </ul>
+          </div>
+
         <% else %>
           <%= link_to 'Login', login_path, class: 'btn btn-success' %>
           <%= link_to 'Create', new_user_path, class: 'btn btn-success' %>
