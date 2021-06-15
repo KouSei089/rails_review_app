@@ -1,0 +1,15 @@
+current directory: /Users/h.izumi/Desktop/rails_curriculum_review/rails_curriculum_review/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/Users/h.izumi/.rbenv/versions/2.6.6/bin/ruby -I /Users/h.izumi/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210615-86902-q91bs4.rb extconf.rb
+creating Makefile
+
+current directory: /Users/h.izumi/Desktop/rails_curriculum_review/rails_curriculum_review/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= clean
+
+current directory: /Users/h.izumi/Desktop/rails_curriculum_review/rails_curriculum_review/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\=
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/h.izumi/Desktop/rails_curriculum_review/rails_curriculum_review/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20210615-86902-etp4qg
