@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resource :profile
 
   resources :users, only: [:new, :create]
-  get 'login' => 'user_sessions#new', :as => :login
-  post 'login' => "user_sessions#create"
-  post 'logout' => 'user_sessions#destroy', :as => :logout
+  get 'login' to: 'user_sessions#new', :as => :login
+  post 'login' to: "user_sessions#create"
+  post 'logout' to: 'user_sessions#destroy', :as => :logout
 end
