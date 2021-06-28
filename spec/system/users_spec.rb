@@ -12,6 +12,17 @@ RSpec.describe "Users", type: :system do
       expect(page).to have_content 'User was successfully created.'
     end
   end
+  describe 'Task詳細' do
+    context '正常系' do
+      it 'Taskが表示されること' do
+        visit project_task_path(project, task)
+        expect(page).to have_content task.title
+        expect(page).to have_content task.status
+        expect(page).to have_content task.deadline.strftime('%Y-%m-%d %H:%M')
+        expect(current_path).to eq project_task_path(project, task)
+      end
+    end
+  end
   describe 'Task削除' do
     context '正常系' do
       it 'Taskが削除されること' do
