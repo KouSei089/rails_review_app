@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe "Users", type: :system do
+  let(:post) { create(:post) }
+  let(:task) { create(:task)}
   describe 'ログイン前' do
     it "アカウント登録" do
       visit sign_up_path
